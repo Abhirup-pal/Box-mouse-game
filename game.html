@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple mouse game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <label>Enter your phone number : <br></label>
+    <label for="budget">0</label>
+    <input type="range" step="1" max="9999999999" min="0" id="budget" name="budget">
+    <label for="budget">9999999999</label>
+    <div id="main_container">
+        <div id="instructions">
+            <p>
+            <div id="line1" class="line_style" onmouseover=display(this.id)>
+                PLACE YOUR MOUSE POINTER HERE TO VIEW INSTRUCTIONS TO PLAY
+                <br><br>
+                KEEP HOVERING TO FIND MORE INSTRUCTIONS :)
+            </div>
+            <br><br>
+            <div id="line2" class="lines" class="line_style" onmouseover=display(this.id)>
+                HI THERE, WELCOME TO THIS GAME <br><br></div>
+            <div id="line3" class="lines" class="line_style" onmouseover=display(this.id)>
+                ONCE YOU CLICK THE START BUTTON, A MOVING BOX WILL APPEAR <br><br> </div>
+            <div id="line4" class="lines" class="line_style" onmouseover=display(this.id)>
+                YOU HAVE TO KEEP YOUR MOUSE POINTER ON THAT BOX TO INCREASE YOUR SCORE BY 1 <br><br> </div>
+            <div id="line5" class="lines" class="line_style" onmouseover=display(this.id)>
+                YOUR GOAL IS TO MAXIMIZE YOUR SCORE, THAT IS KEEP YOUR POINTER ON THE BOX AS LONG AS POSSIBLE <br><br>
+            </div>
+            <div id="line6" class="lines" class="line_style" onmouseover=display(this.id)>
+                PLAY IN A DESKTOP OR A LAPTOP FOR BETTER EXPERIENCE<br><br></div>
+            <div id="line7" class="lines" class="line_style" onmouseover=display(this.id)>
+                THANK YOU :) <br> <br></div>
+            <div id="line8" class="lines" class="line_style">
+                ABHIRUP KO GAALI MAT DENA, PASAND NAHI AAYA TO :( <br> <br>
+                HE HAS BETTER STALKS OF GAALIS :D <br>
+            </div>
+            </p>
+            <label id="time_of_game">Enter the duration of the game here</label>
+            <input type="number" placeholder="Enter duration in seconds (recommended : less than 30 seconds)"
+                id="duration" required>
+            <button id="start" class="btn">
+                START
+            </button>
+            <div id="score" class="style_bekar_items">
+
+            </div>
+            <div id="highest_score" class="style_bekar_items">
+
+            </div>
+        </div>
+    </div>
+    <div class="box_container">
+        <div class="box" id="boxx">
+            <p id="box_text"  >
+                PLACE YOUR POINTER ON THIS BOX
+            </p> 
+        </div>
+        <div id="clock" class="style_bekar_items" style="display:none">
+
+        </div>
+    </div>
+</body>
+<script src="game.js"></script>
+
+</html>
